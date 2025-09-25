@@ -1,0 +1,43 @@
+section {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ajout de cette ligne */
+}
+
+h2 {
+  margin-top: 18vh;
+  text-align: center;
+  text-decoration: underline 2px #d8b35c;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  flex: 1 0 21%; /* Ajout de cette ligne pour permettre une flexibilité */
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.profile-card p {
+  font-size: 1em;
+  color: #666;
+}

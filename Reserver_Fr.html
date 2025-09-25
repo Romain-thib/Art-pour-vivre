@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/Header_footer.css" />
+    <link rel="stylesheet" href="styles/Reservation.css" />
+    <link rel="stylesheet" href="styles/police.css" />
+    <title>Art pour Vivre</title>
+  </head>
+  <body>
+    <header>
+      <h1>Art pour Vivre</h1>
+      <nav>
+        <a href="Art_pour_Vivre_Page_principale_Fr.html" class="logo"
+          ><img src="images/logo.png" alt="Logo" class="logo"
+        /></a>
+        <!-- Le checkbox caché qui contrôle l'état du menu -->
+        <input type="checkbox" id="menu-toggle" class="checkbox" />
+        <!-- Le label pour l'icône hamburger -->
+        <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+        <!-- Le menu centré-->
+        <div class="menu">
+          <a href="Art_pour_Vivre_Page_principale_Fr.html">Accueil</a>
+          <a href="Art_pour_Vivre_Presentation_Fr.html">Présentation</a>
+          <a href="Art_pour_Vivre_Reservation_Fr.html" class="active"
+            >Réservations</a
+          >
+          <a href="Contact_Fr.html">Contact</a>
+          <a href="A_Propos_Fr.html">À propos</a>
+        </div>
+        <!-- Changement de langue -->
+        <div class="info">
+          <label for="toggle-langue" class="langue-selectionnee">
+            <img
+              src="images/france.png"
+              alt="Drapeau de la France"
+              class="drapeau"
+            />
+          </label>
+          <input type="checkbox" id="toggle-langue" />
+          <div class="menu-deroulant">
+            <a href="Reserver_Fr.html"
+              ><img
+                src="images/france.png"
+                alt="Drapeau de la France"
+                class="drapeau"
+              />Français</a
+            >
+            <a href="Reserver_En.html">
+              <img
+                src="images/royaume-uni.png"
+                alt="Drapeau du Royaume-Uni"
+                class="drapeau"
+              />English</a
+            >
+          </div>
+          <span class="separateur">|</span>
+          <a href="Art_pour_Vivre_Identification_Fr.html" class="connexion"
+            >S'identifier</a
+          >
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="reserver">
+        <h2>Réservation pour une exposition</h2>
+        <form action="/reservation-handler" method="post">
+          <label for="surname">Nom</label>
+          <input type="text" id="surname" name="surname" required />
+          <label for="name">Prénom</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="ville">Quelle ville :</label>
+          <select id="ville" name="ville">
+            <option value="lille">Lille</option>
+            <option value="paris">Paris</option>
+            <option value="lyon">Lyon</option>
+            <option value="bordeaux">Bordeaux</option>
+          </select>
+          <label for="offer">Offre</label>
+          <select id="offer" name="offer">
+            <option value="student">Étudiante 10€</option>
+            <option value="classic">Classique 15€</option>
+            <option value="scolaire">Scolaire 3€ par personne</option>
+          </select>
+          <select id="activite" name="activite">
+            <option value="rien">Rien</option>
+            <option value="immersif">Immersif + 5€</option>
+            <option value="visite">Visite guidée + 5€</option>
+            <option value="activite">Activité manuelle + 5€</option>
+          </select>
+          <label for="requests">Des questions</label>
+          <textarea id="requests" name="requests" rows="4"></textarea>
+          <button type="submit">Réserver</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Adresse : 123 Rue de l'Art, 75000 Paris, France</p>
+        <p>Téléphone : #</p>
+        <p>Email : contact@artpourvivre.fr</p>
+      </div>
+      <div class="footer-section">
+        <h3>Liens Rapides</h3>
+        <ul>
+          <li>
+            <a href="Art_pour_Vivre_Page_principale_Fr.html">Accueil</a>
+          </li>
+          <li><a href="A_Propos_Fr.html">À Propos</a></li>
+          <li>
+            <a href="Art_pour_Vivre_Reservation_Fr.html">Expositions</a>
+          </li>
+          <li>
+            <a href="Art_pour_Vivre_Presentation_Fr.html#Collab"
+              >Collaboration</a
+            >
+          </li>
+          <li>
+            <a href="Art_pour_Vivre_Presentation_Fr.html#Service">Services</a>
+          </li>
+          <li><a href="Contact_Fr.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com">
+            <img
+              src="images/facebook.png"
+              alt="Facebook"
+              class="social-icon"
+            />Facebook
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              src="images/instagram.png"
+              alt="Instagram"
+              class="social-icon"
+            />
+            Instagram
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="images/X.png" alt="Twitter" class="social-icon" />
+            Twitter
+          </a>
+          <a href="https://www.linkedin.com">
+            <img src="images/linkedln.png" alt="LinkedIn" class="social-icon" />
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Mentions Légales</h3>
+        <p><a href="#mentionslegales">Mentions Légales</a></p>
+        <p>
+          <a href="#politiqueconfidentialite">Politique de Confidentialité</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Partenaires</h3>
+        <p>
+          <a href="Art_pour_Vivre_Presentation_Fr.html#Collab"
+            >Voir nos partenaires</a
+          >
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Art pour Vivre. Tous droits réservés.</p>
+        <p>Site conçu par ...<a href="Contact_Fr.html"></a></p>
+      </div>
+    </footer>
+  </body>
+</html>

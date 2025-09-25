@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/Header_footer.css" />
+    <link rel="stylesheet" href="styles/presentation.css" />
+    <link rel="stylesheet" href="styles/police.css" />
+    <title>Art pour Vivre</title>
+  </head>
+  <body>
+    <header>
+      <h1>Art pour Vivre</h1>
+      <nav>
+        <a href="Art_pour_Vivre_Page_principale_En.html" class="logo"
+          ><img src="images/logo.png" alt="Logo" class="logo"
+        /></a>
+        <!-- Le checkbox caché qui contrôle l'état du menu -->
+        <input type="checkbox" id="menu-toggle" class="checkbox" />
+        <!-- Le label pour l'icône hamburger -->
+        <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+        <!-- Le menu centré-->
+        <div class="menu">
+          <a href="Art_pour_Vivre_Page_principale_Fr.html">Accueil</a>
+          <a href="Art_pour_Vivre_Presentation_Fr.html" class="active"
+            >Présentation</a
+          >
+          <a href="Art_pour_Vivre_Reservation_Fr.html">Réservations</a>
+          <a href="Contact_Fr.html">Contact</a>
+          <a href="A_Propos_Fr.html">À propos</a>
+        </div>
+        <!-- Changement de langue -->
+        <div class="info">
+          <label for="toggle-langue" class="langue-selectionnee">
+            <img
+              src="images/france.png"
+              alt="Drapeau de la France"
+              class="drapeau"
+            />
+          </label>
+          <input type="checkbox" id="toggle-langue" />
+          <div class="menu-deroulant">
+            <a href="Art_pour_Vivre_Presentation_Fr.html"
+              ><img
+                src="images/france.png"
+                alt="Drapeau de la France"
+                class="drapeau"
+              />Français</a
+            >
+            <a href="Art_pour_Vivre_Presentation_En.html">
+              <img
+                src="images/royaume-uni.png"
+                alt="Drapeau du Royaume-Uni"
+                class="drapeau"
+              />English</a
+            >
+          </div>
+          <span class="separateur">|</span>
+          <a href="Art_pour_Vivre_Identification_Fr.html" class="connexion"
+            >S'identifier</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <h2 class="h2">
+      L'art de vivre, c'est de transformer chaque jour en une œuvre d'art
+    </h2>
+    <img
+      class="img_presentation"
+      src="images/img_presentation.jpg"
+      alt="Test"
+    />
+    <main>
+      <section id="Service">
+        <h2>Nos services</h2>
+        <div class="carousel">
+          <input type="radio" name="carousel" id="slide1" checked />
+          <input type="radio" name="carousel" id="slide2" />
+          <input type="radio" name="carousel" id="slide3" />
+          <input type="radio" name="carousel" id="slide4" />
+          <div class="radios_numeros">
+            <label for="slide1" class="numeros">1</label>
+            <p>Visites</p>
+            <label for="slide2" class="numeros">2</label>
+            <p>Cours</p>
+            <label for="slide3" class="numeros">3</label>
+            <p>Ateliers</p>
+            <label for="slide4" class="numeros">4</label>
+            <p>Offres</p>
+          </div>
+          <div class="carousel-inner">
+            <div class="slide">
+              <img src="images/Visite_guide2.jpg" alt="Image 1" />
+              <div class="text">
+                Découvrez des visites guidées captivantes dans des lieux
+                d'exception, pour explorer l'art et la culture d'une manière
+                immersive. Nos experts passionnés vous feront découvrir les
+                œuvres incontournables et les secrets cachés des expositions.
+                C'est une opportunité unique d'approfondir vos connaissances et
+                d'apprécier l'art sous un nouvel angle.
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/Cour3.jpg" alt="Image 2" />
+              <div class="text">
+                Participez à des cours interactifs, adaptés à tous les niveaux,
+                pour approfondir vos connaissances artistiques et sur l'histoire
+                de l'art. Apprenez des techniques de peinture, de dessin, de
+                sculpture et bien plus encore dans une ambiance conviviale et
+                inspirante.
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/Cour-art2.jpg" alt="Image 3" />
+              <div class="text">
+                Participez à nos ateliers pour explorer différentes formes d'art
+                et exprimer votre créativité. Nos ateliers interactifs sont
+                conçus pour tous les âges et tous les niveaux. Venez
+                expérimenter, créer et repartir avec vos propres œuvres d'art
+                uniques.
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/Offre_Etudiante.jpg" alt="Image 4" />
+              <div class="text">
+                Profitez de nos offres spéciales dédiées aux étudiants et aux
+                voyages scolaires. Ces offres vous permettent de découvrir l'art
+                de manière privilégiée avec des réductions sur les billets ainsi
+                que des événements exclusifs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Collab">
+        <h2>Collaborations et Partenariats</h2>
+        <div class="carousel carousel-collab">
+          <input
+            type="radio"
+            name="carousel-collab"
+            id="slide-collab1"
+            checked
+          />
+          <input type="radio" name="carousel-collab" id="slide-collab2" />
+          <div class="radios_numeros">
+            <label for="slide-collab1" class="numeros">1</label>
+            <p>Collaboration</p>
+            <label for="slide-collab2" class="numeros">2</label>
+            <p>Partenariats</p>
+          </div>
+          <div class="carousel-inner">
+            <div class="slide">
+              <div class="collaborations">
+                <div class="partenariat">
+                  <img
+                    src="images/Collabarateur/Femme.jpg"
+                    alt="Photo de profil Emma Dupont"
+                  />
+                  <p>
+                    Emma Dupont, artiste contemporaine reconnue pour ses
+                    installations immersives. Âgée de 30 ans, elle collabore
+                    avec nous depuis 2018.
+                  </p>
+                </div>
+                <div class="partenariat">
+                  <img
+                    src="images/Collabarateur/Homme.jpg"
+                    alt="Photo de profil Lucas Martin"
+                  />
+                  <p>
+                    Lucas Martin, sculpteur renommé spécialisé dans les œuvres
+                    en métal recyclé. Âgé de 45 ans, il est partenaire depuis
+                    2015.
+                  </p>
+                </div>
+                <div class="partenariat">
+                  <img
+                    src="images/Collabarateur/Homme2.jpg"
+                    alt="Photo de profil Emile Laurent"
+                  />
+                  <p>
+                    Emile Laurent, peintre abstrait avec une série acclamée sur
+                    les paysages urbains. Âgé de 25 ans, il a rejoint notre
+                    programme de partenariat en 2020.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/Collabarateur/Louvre.jpg" alt="Partenariats" />
+              <div class="text1">
+                Découvrez nos nombreux partenariats avec des institutions
+                artistiques et culturelles de renom, permettant d'offrir des
+                expériences uniques et enrichissantes à notre public. Comme le
+                Musée du Louvre, abritant la célèbre Mona Lisa et une vaste
+                collection d'art classique. Partenaire depuis 2010, ce musée
+                emblématique enrichit notre programme culturel.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Adresse : 123 Rue de l'Art, 75000 Paris, France</p>
+        <p>Téléphone : #</p>
+        <p>Email : contact@artpourvivre.fr</p>
+      </div>
+      <div class="footer-section">
+        <h3>Liens Rapides</h3>
+        <ul>
+          <li>
+            <a href="Art_pour_Vivre_Page_principale_Fr.html">Accueil</a>
+          </li>
+          <li><a href="A_Propos_Fr.html">À Propos</a></li>
+          <li>
+            <a href="Art_pour_Vivre_Reservation_Fr.html">Expositions</a>
+          </li>
+          <li>
+            <a href="Art_pour_Vivre_Presentation_Fr.html#Collab"
+              >Collaboration</a
+            >
+          </li>
+          <li>
+            <a href="Art_pour_Vivre_Presentation_Fr.html#Service">Services</a>
+          </li>
+          <li><a href="Contact_Fr.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Suivez-nous</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com">
+            <img
+              src="images/facebook.png"
+              alt="Facebook"
+              class="social-icon"
+            />Facebook
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              src="images/instagram.png"
+              alt="Instagram"
+              class="social-icon"
+            />
+            Instagram
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="images/X.png" alt="Twitter" class="social-icon" />
+            Twitter
+          </a>
+          <a href="https://www.linkedin.com">
+            <img src="images/linkedln.png" alt="LinkedIn" class="social-icon" />
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Mentions Légales</h3>
+        <p><a href="#mentionslegales">Mentions Légales</a></p>
+        <p>
+          <a href="#politiqueconfidentialite">Politique de Confidentialité</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Partenaires</h3>
+        <p>
+          <a href="Art_pour_Vivre_Presentation_Fr.html#Collab"
+            >Voir nos partenaires</a
+          >
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Art pour Vivre. Tous droits réservés.</p>
+        <p>Site conçu par ...<a href="Contact_Fr.html"></a></p>
+      </div>
+    </footer>
+  </body>
+</html>

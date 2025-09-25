@@ -1,0 +1,59 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Pour centrer verticalement */
+}
+
+fieldset {
+  width: 50%; /* Ajustez la taille selon vos besoins */
+  max-width: 500px; /* Limite la largeur maximale */
+  padding: 20px; /* Ajoute de l'espace interne */
+  margin: auto; /* Centre horizontalement */
+  border: 2px solid #ccc; /* Ajoute une bordure visible */
+  border-radius: 8px; /* Ajoute des coins arrondis */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute un effet d'ombre */
+  background-color: white; /* Définir une couleur de fond */
+}
+fieldset > h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+fieldset > a {
+  color: black;
+}
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="date"],
+form button {
+  margin-top: 20px; /* Ajoute un espacement spécifique au champ email */
+
+  display: block; /* Assure que chaque champ est sur une nouvelle ligne */
+  width: 100%; /* Facultatif, ajuste la largeur */
+  margin-bottom: 20px; /* Ajoute de l'espace entre les champs */
+  padding: 10px; /* Ajoute de l'espace interne pour un meilleur confort */
+  border: 1px solid #ccc; /* Style la bordure */
+  border-radius: 4px; /* Ajoute des coins arrondis */
+  box-sizing: border-box; /* Empêche que le padding affecte la largeur totale */
+}
+fieldset > a {
+  text-align: center;
+}
+form input[type="checkbox"] {
+  margin-top: 50px;
+}
+form button {
+  background-color: #d8b35c; /* Couleur au survol */
+}
+form button:hover {
+  background-color: #c9a654; /* Couleur au survol */
+}
+
+section {
+  margin-top: 18vh;
+}
+
+footer {
+  margin-top: 5vh;
+}

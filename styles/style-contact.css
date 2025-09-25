@@ -1,0 +1,53 @@
+div form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10%;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+fieldset p {
+  text-decoration: underline #d8b35c;
+}
+form input:hover {
+  background-color: #c9a654; /* Couleur au survol */
+}
+form input {
+  accent-color: #d8b35c;
+}
+form button {
+  background-color: #d8b35c;
+  margin-top: 20px; /* Ajoute un espacement spécifique au champ email */
+
+  display: block; /* Assure que chaque champ est sur une nouvelle ligne */
+  width: 100%; /* Facultatif, ajuste la largeur */
+  margin-bottom: 20px; /* Ajoute de l'espace entre les champs */
+  padding: 10px; /* Ajoute de l'espace interne pour un meilleur confort */
+  border: 1px solid #ccc; /* Style la bordure */
+  border-radius: 4px; /* Ajoute des coins arrondis */
+  box-sizing: border-box; /* Empêche que le padding affecte la largeur totale */
+}
+form button:hover {
+  background-color: #c9a654; /* Couleur au survol */
+}
+
+fieldset {
+  padding: 10px;
+  border: 2px solid #ccc; /* Ajoute une bordure visible */
+  border-radius: 8px; /* Ajoute des coins arrondis */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute un effet d'ombre */
+  background-color: white;
+  padding-top: 2px;
+}
+
+fieldset textarea {
+  width: calc(
+    100% - 20px
+  ); /* Ajustez en fonction de la taille des bordures ou marges */
+  box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur */
+  border: 2px solid #ccc; /* Ajoute une bordure visible */
+  border-radius: 8px; /* Ajoute des coins arrondis */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute un effet d'ombre */
+  background-color: white;
+}

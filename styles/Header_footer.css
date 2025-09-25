@@ -1,0 +1,265 @@
+/* Style général */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+body {
+  overflow-x: hidden;
+}
+header,
+main {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+h1 {
+  z-index: 11;
+  text-align: center;
+  top: -15px;
+  font-size: clamp(16px, 3vw, 40px);
+  position: fixed;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+/*Navigation*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; /* Pour fixer le nav en haut de la page */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Pour que le nav soit au-dessus des autres éléments */
+  padding-top: 30px;
+  background-color: #f5f5f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  width: 80px;
+  position: relative;
+  top: -5px;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  position: relative;
+  top: 10px;
+  margin: 0 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+nav a:not(:hover):not(:first-child, .connexion, .menu-deroulant a, a.active) {
+  /* Griser les liens non actifs */
+  color: grey;
+}
+nav a:hover {
+  color: black;
+}
+nav a.active {
+  /* Faire ressortir le lien de la page active */
+  font-weight: bold;
+}
+nav a:not(.logo)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #d8b35c;
+  transform: translateX(-50%);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+/*Langue*/
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.connexion {
+  margin-left: 3%;
+}
+.separateur {
+  margin-top: 11.2%;
+  font-weight: bolder;
+}
+.langue-selectionnee {
+  margin-top: 14%;
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+}
+#toggle-langue {
+  display: none;
+}
+#toggle-langue:checked + .menu-deroulant {
+  display: block;
+}
+.menu-deroulant {
+  background-color: #f5f5f0ef;
+  border: solid 1px black;
+  display: none;
+  padding-bottom: 10px;
+  margin-right: 30px;
+  position: absolute;
+  top: 85%;
+  z-index: 1;
+}
+.menu-deroulant a {
+  display: flex;
+  align-items: center; /* Centre les éléments horizontalement */
+  padding-right: 1%; /* Ajouter un espace à droite de 1% après le mot */
+  box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+  top: 5px;
+}
+/* Réduire la taille des drapeaux et ajuster l'espacement */
+.drapeau {
+  width: 18px; /* Taille fixe plus petite */
+  height: auto; /* Maintient le ratio d'aspect */
+  margin-right: 7px; /* Espace entre le drapeau et le texte */
+  vertical-align: middle; /* Aligne verticalement avec le texte */
+}
+/* Style du menu mobile */
+@media (max-width: 768px) {
+  h1 {
+    z-index: 11;
+    text-align: center;
+    top: 5px;
+    font-size: 25px;
+    position: fixed;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 47px;
+    font-size: 15px;
+  }
+  .separateur {
+    margin-top: 18px;
+  }
+  .drapeau {
+    margin-top: 3px;
+  }
+  nav .logo {
+    width: 60px;
+    position: relative;
+    top: -5px;
+  }
+  nav .menu {
+    display: none; /* Cacher le menu par défaut */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: #f5f5f0;
+    padding: 10px 0;
+  }
+  nav .menu a {
+    margin: 10px 0;
+    text-align: center;
+  }
+  /* Bouton hamburger */
+  .menu-toggle {
+    position: absolute;
+    font-size: 30px;
+    top: 55%;
+    right: 30px;
+    cursor: pointer;
+    display: block;
+    color: black;
+    animation: none;
+    transition: none;
+    transform: none;
+    user-select: none;
+  }
+  /* Quand le checkbox est coché, afficher le menu */
+  .checkbox:checked + .menu-toggle + .menu {
+    display: flex;
+  }
+  .checkbox {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  /* Cacher l'icône hamburger */
+  .menu-toggle,
+  .checkbox {
+    display: none;
+  }
+  nav .menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-section {
+  flex: 1;
+  margin: 5vh;
+  font-size: 2vh;
+}
+.footer-section h3 {
+  margin-top: 0;
+  font-size: 3vh;
+}
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  margin-top: 1vh;
+}
+.footer-section a:hover {
+  text-decoration: underline #d8b35c;
+}
+.footer-bottom {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 2vh;
+  border-top: 1px solid #ede1c4;
+  padding-top: 1vh;
+}
+.footer > img {
+  width: 100%;
+  height: auto;
+}
+/* Ajuster la taille des icônes de réseaux sociaux */
+.social-icon {
+  width: 2.5vh;
+  height: auto;
+  margin-right: 2vh;
+  vertical-align: middle;
+}
+/* Aligner verticalement les liens de réseaux sociaux */
+.social-links {
+  display: flex;
+  flex-direction: column;
+}

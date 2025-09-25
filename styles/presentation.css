@@ -1,0 +1,245 @@
+header {
+  margin-bottom: 16vh;
+}
+
+.img_presentation {
+  width: 100%;
+  margin-top: -50px;
+  min-height: 300px;
+  max-height: 571px;
+}
+
+main {
+  margin-top: -4px;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #d8b35c;
+}
+
+section + section {
+  border-top: 2px solid #d8b35c;
+}
+
+img + main {
+  border-top: 2px solid #d8b35c;
+}
+
+.h2 {
+  position: absolute;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  padding-top: 10px;
+  margin: 0;
+  text-align: center;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel input {
+  display: none;
+}
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  max-height: 650px;
+  display: flex;
+}
+h2:not(.h2) {
+  text-decoration: underline #d8b35c 2px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+.text {
+  position: absolute;
+  bottom: 5px;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+}
+.text1 {
+  position: absolute;
+  bottom: 5px;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+}
+.numeros {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background: black;
+  padding: 10px 15px;
+  margin: 0 6px;
+  border-radius: 50px;
+  border: #d8b35c solid 2px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+.numeros:hover {
+  background: #d8b35c; /* Couleur au survol */
+  color: black;
+}
+.radios_numeros label + p {
+  margin-left: 0;
+  margin-right: 50px;
+  color: white;
+}
+
+.radios_numeros {
+  position: relative;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between; /* Répartit les éléments horizontalement */
+  align-items: center; /* Aligne verticalement */
+  background-color: black;
+  width: 600px; /* Largeur du conteneur */
+  border-radius: 30px; /* Bordures arrondies */
+}
+#slide1:checked ~ .carousel-inner {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .carousel-inner {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .carousel-inner {
+  transform: translateX(-200%);
+}
+#slide4:checked ~ .carousel-inner {
+  transform: translateX(-300%);
+}
+@media (max-width: 600px) {
+  .img_presentation {
+    width: 100%;
+    margin-top: -50px;
+  }
+  .h2 {
+    position: absolute;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+  }
+  .radios_numeros {
+    width: 100%; /* Adapte la largeur à 100% du conteneur parent */
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin-left: 5px;
+  }
+  .radios_numeros label + p {
+    margin-left: 0;
+    margin-right: 20px;
+    color: white;
+  }
+  .numeros {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .text {
+    font-size: 17px;
+  }
+  .text1 {
+    font-size: 17px;
+  }
+}
+/* Style des labels lorsqu'un input radio est sélectionné */
+input[type="radio"]:checked + label {
+  background: #d8b35c;
+  color: black;
+}
+
+/* Pour chaque input radio et son label associé */
+#slide1:checked ~ .radios_numeros label[for="slide1"],
+#slide2:checked ~ .radios_numeros label[for="slide2"],
+#slide3:checked ~ .radios_numeros label[for="slide3"],
+#slide4:checked ~ .radios_numeros label[for="slide4"] {
+  background: #d8b35c;
+  color: black;
+}
+#slide-collab1:checked ~ .radios_numeros label[for="slide-collab1"],
+#slide-collab2:checked ~ .radios_numeros label[for="slide-collab2"] {
+  background: #d8b35c;
+  color: black;
+}
+.collaborations {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+}
+
+.collaborations h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.partenariat {
+  width: 20%;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.partenariat img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.partenariat p {
+  margin-top: 10px;
+}
+
+/* Style spécifique au nouveau carrousel */
+#slide-collab1:checked ~ .carousel-inner {
+  transform: translateX(0%);
+}
+#slide-collab2:checked ~ .carousel-inner {
+  transform: translateX(-100%);
+}
+
+.carousel-collab .radios_numeros label + p {
+  margin-left: 0;
+  margin-right: 0;
+  display: inline-block; /* Pour les aligner horizontalement */
+  margin-top: 20px; /* Supprime les marges verticales */
+}
+.carousel-collab .radios_numeros {
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center;
+  gap: 10px; /* Espace entre chaque paire label + p */
+}
