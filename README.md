@@ -1,5 +1,7 @@
 # 🎨 Art pour Vivre
 
+⚠️ Ce dépôt est une copie du projet original (GitLab privé), rendue publique à des fins de présentation dans un portfolio.
+
 **Art pour Vivre** est un site web réalisé dans le cadre d’un projet de groupe, dont l’objectif était de concevoir une entreprise fictive et de développer son site vitrine en HTML/CSS.
 
 ## 🧠 Contexte du projet
